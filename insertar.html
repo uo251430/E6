@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://localhost/Ejercicio-6/insertar.php# -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>insertar</title>
+    
+    <meta name="author" content="UO251430"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://localhost/Ejercicio-6/formulario.css">
+   
+</head>
+    
+<body>
+    
+    <h1>Introducir datos en tabla pruebasUsabilidad</h1>
+    
+    
+    
+    <form action="https://localhost/Ejercicio-6/insertar.php#" method="post" name="insertar">
+
+        <fieldset>
+            <legend>Datos </legend>
+            <label for="dni">*DNI:</label>
+        <input id="dni" type="text" required="" name="dni" autofocus=""><br>
+
+        <label for="Nombre">*Nombre:</label>
+        <input id="Nombre" type="text" required="" name="nombre"><br>
+
+        <label for="Apellidos">*Apellidos:</label>
+        <input id="Apellidos" type="text" required="" name="apellidos"><br>
+
+        <label for="Email">*Email:</label>
+        <input id="Email" type="email" required="" name="email"><br>
+
+        <label for="Telefono">*Telefono:</label><br>
+        <input id="Telefono" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" title="NNN-NN-NN-NN" required="" name="telefono"><br>
+
+        <label for="Edad">*Edad:</label>
+        <input id="Edad" type="text" required="" name="edad"><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Sexo </legend>
+            <label for="Masculino">Masculino</label>
+            <input id="Masculino" type="radio" name="sexo" value="Masculino" checked=""><br>
+            <label for="Femenino">Femenino</label>
+            <input id="Femenino" type="radio" name="sexo" value="Femenino"><br>
+        </fieldset>
+
+
+        <fieldset>
+        <legend>Mas información </legend>
+        <label for="Nivel">Nivel de informática:</label>
+        <input id="Nivel" type="range" min="0" max="10" name="nivel"><br>
+
+        <label for="Tiempo">Tiempo en s:</label><br>
+        <input id="Tiempo" type="number" min="0" name="tiempo"><br>
+
+        <fieldset>
+            <legend>Ha realizado la tarea correctamente: </legend>
+            <label for="Si">Sí</label>
+            <input id="Si" type="radio" name="isCorrecto" value="Sí" checked=""><br>
+            <label for="No">No</label>
+            <input id="No" type="radio" name="isCorrecto" value="No"><br>
+        </fieldset>
+        
+        <label for="Comentario">Comentario:</label>
+        <!-- <input id="Comentario" type="text"  name="comentario"><br> -->
+        <textarea id="Comentario" cols="60" rows="6" name="comentario"></textarea><br>
+
+
+        <label for="Propuestas">Propuestas de mejora:</label>
+        <!-- <input id="Propuestas" type="text"  name="propuestas"><br> -->
+        <textarea id="Propuestas" cols="60" rows="6" name="propuestaMejora"></textarea><br>
+
+        <label for="Valoracion">Valoración:</label>
+        <input id="Valoracion" type="range" min="0" max="10" name="valoracion"><br>
+
+        </fieldset>
+        <input type="submit" name="enviar" value="Enviar">
+
+    
+        </form>
+            
+
+</body></html>
